@@ -1,0 +1,113 @@
+.new-arrival {
+  padding: 80px 64px;
+  background: var(--grey);
+}
+
+.new-arrival__inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+}
+
+.new-arrival__media {
+  flex: 0 0 46%;
+  position: relative;
+  height: 420px;
+  background: #e8e8e8;
+  overflow: hidden;
+}
+
+.new-arrival__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Fallback gradient */
+.new-arrival__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #d4d4d4 0%, #b8b8b8 100%);
+  z-index: 0;
+}
+
+.new-arrival__video {
+  position: relative;
+  z-index: 1;
+}
+
+.new-arrival__content {
+  flex: 1;
+  padding: 56px 64px;
+}
+
+.new-arrival__eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: rgba(19,19,19,0.45);
+  margin-bottom: 20px;
+}
+
+.new-arrival__heading {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.new-arrival__date {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(19,19,19,0.55);
+  margin-bottom: 40px;
+  letter-spacing: 0.03em;
+}
+
+.new-arrival__btn {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 16px 40px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.new-arrival__btn:hover {
+  background: #2d2d2d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 900px) {
+  .new-arrival {
+    padding: 60px 20px;
+  }
+  .new-arrival__inner {
+    flex-direction: column;
+  }
+  .new-arrival__media {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 320px;
+  }
+  .new-arrival__content {
+    padding: 40px 32px;
+  }
+}

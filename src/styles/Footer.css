@@ -1,0 +1,146 @@
+.footer {
+  background-color: #111111; /* Deep dark background */
+  padding: 80px 64px 32px;
+  color: var(--white, #ffffff);
+  font-family: var(--font-body, sans-serif);
+}
+
+.footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+/* Fading text effect for the brand logo */
+.footer__brand {
+  flex: 1;
+}
+
+.footer__logo {
+  font-family: var(--font-display, sans-serif);
+  font-size: clamp(60px, 12vw, 180px);
+  /* Changed from 900 to 700 to make the text slightly thinner */
+  font-weight: 700; 
+  line-height: 0.8;
+  letter-spacing: -0.02em;
+  margin: 0;
+  
+  /* Create the fade effect from left to right */
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0.05) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Links and Columns Grid */
+.footer__links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer__column-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+}
+
+/* Social Icons */
+.footer__socials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer__social-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ensure the react-icons SVGs are sized nicely inside the boxes */
+.footer__social-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__social-icon:hover {
+  transform: translateY(-3px);
+  background-color: #e0e0e0;
+}
+
+/* Footer Bottom Strip */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 32px;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: #808080;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 40px 32px;
+  }
+  .footer__top {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .footer__logo {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 24px;
+  }
+  .footer__links {
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+  }
+  .footer__column-title {
+    margin-bottom: 20px;
+  }
+}
