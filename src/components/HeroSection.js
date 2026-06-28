@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/HeroSection.css';
-import heroVideo from '../media/hero.mp4';
+import heroVideo from '../media/animate_them_also_sommoth_anim.mp4';
 
 const HeroSection = () => {
   return (
