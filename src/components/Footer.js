@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer__top">
           {/* Left Side: Brand Name */}
           <div className="footer__brand">
-            <h1 className="footer__logo">HOUSTON & CO.</h1>
+            <h1 className="footer__logo">VRELUX</h1>
           </div>
 
           {/* Right Side: Links and Socials */}
