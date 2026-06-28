@@ -22,7 +22,7 @@ const Navbar = () => {
 
       {/* Center logo */}
       <div className="navbar__logo">
-        <span className="navbar__logo-text">HOUSTON & CO.</span>
+        <span className="navbar__logo-text">VRELUX</span>
       </div>
 
       {/* Right icons */}
